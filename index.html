@@ -174,7 +174,7 @@
         <header class="section-header">
           <p class="eyebrow">Projects</p>
           <h2 id="projects-heading">Selected work</h2>
-          <p class="section-note">Company site is live; product projects are still under development.</p>
+          <p class="section-note">Company site is live; SOC assistant is a public GitHub showcase (run locally — no hosted demo URL yet).</p>
         </header>
         <div class="projects-grid">
           <article class="project-card">
@@ -196,14 +196,24 @@
             </p>
           </article>
           <article class="project-card">
-            <div class="project-badge" role="status">Capstone</div>
-            <h3>AI SOC Analyst Assistant</h3>
+            <div class="project-badge" role="status">Showcase</div>
+            <h3>AI-Powered SOC Assistant</h3>
             <p>
-              Capstone SOC triage assistant: rules + ML severity scoring, CSV/Wazuh ingest,
-              Flask dashboard, evaluation report, and simulated containment.
+              Mun Cyber Technologies SOC triage console: Wazuh Indexer ingest, YAML detection
+              rules, assist-only ML, case management with SLA, and approval-gated containment
+              in a Flask operations UI. Started as a capstone; built toward real analyst workflow.
             </p>
+            <ul class="project-points">
+              <li>Normalize → enrich → YAML rules (malware / CVE / DNS / FIM) with explain text</li>
+              <li>Observables on alerts and cases (host, IP, user, hash, domain, CVE when present)</li>
+              <li>Cases with SLA, assignees, My cases, and ticket-sync stub</li>
+              <li>Honest ML assist-only until live labels grow; containment preview → confirm</li>
+              <li>Standalone Windows install (<code>install_and_run</code>) for local demos</li>
+            </ul>
             <p class="project-links">
-              <a href="https://github.com/ataallan/soc-assistant" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://github.com/ataallan/soc-assistant" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+              ·
+              <a href="https://github.com/ataallan/soc-assistant/blob/main/docs/STANDALONE.md" target="_blank" rel="noopener noreferrer">Run locally</a>
               ·
               <a href="https://github.com/ataallan/soc-assistant/blob/main/docs/DEMO.md" target="_blank" rel="noopener noreferrer">Demo script</a>
             </p>
